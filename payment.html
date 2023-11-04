@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="">
+        </div>
+        <div class="topnav">
+            <a href="./index.html"><i class="fa fa-user-circle" aria-hidden="true"></i>
+                Sign In</a>
+                <a href="./bookticket.html">Book Ticket</a>
+                <a href="./traindetails.html">Train Status</a>
+    
+        </div>
+    </div>
+    
+    <div class="payment-content">
+        <h1>Payment</h1>
+        <div>
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+        
+        <form action="process-payment.php" method="post" class="payment-form">
+            
+            <input type="text" id="name" name="name" class="form-control" required placeholder="Cardholder's Name">
+            
+            
+            <input type="text" id="card-number" name="card-number" class="form-control" required placeholder="Card Number">
+            
+            
+            <input type="text" id="expiration" name="expiration" class="form-control" required placeholder="Expiration Date">
+            
+            
+            <input type="text" id="cvv" name="cvv" class="form-control" required placeholder="CVV">
+            <br><br>
+            
+            <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+        </form>
+    </div>
+    <div class="footer">
+
+        <p> ©2023|All Rights Reserved</p>
+    </div>
+</body>
+</html>
