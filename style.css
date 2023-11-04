@@ -1,0 +1,348 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header styles */
+.header {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 100px;
+}
+
+
+/* Top navigation styles */
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.topnav a:hover {
+    background-color: #ded82d;
+    color: rgb(255, 255, 255);
+}
+
+/* Top navigation styles */
+
+
+
+
+/* Login form styles */
+.login {
+    text-align: center;
+    height: 300px;
+    border: gainsboro solid 1px;
+    box-shadow: 10px 10px 5px lightblue;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.logo img {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.login h2 {
+    padding: 10px;
+    color: #2d65de;
+    text-align: center;
+}
+
+.login form {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+
+.login input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    border: #000000 1px solid;
+}
+
+.login .sign {
+    width: 100px;
+    padding: 5px;
+    background-color: #2d65de;
+    color: aliceblue;
+    border: none;
+    margin-top: 20px;
+}
+
+.login .sign:hover {
+    background-color: #ded82d;
+    color: rgb(255, 255, 255);
+}
+
+.login input {
+    display: inline-block;
+    padding: 3px;
+}
+
+.login [type=text]:focus, input[type=password]:focus {
+    background-color: #efeeee;
+    outline: none;
+
+}
+
+/* Login form styles */
+
+
+
+/* Train list styles */
+
+.train-list{
+    background-image: url(./images/train.webp);
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 20px;
+}
+.train-list h1 {
+    text-align: center;
+    background-color: #2d65de;
+    color: #fff;
+    padding: 20px;
+}
+
+.train-list table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.train-list th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.train-list th {
+    background-color: #2d65de;
+    color: #fff;
+}
+
+.train-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.train-list tr:hover {
+    background-color: #ddd;
+}
+
+
+
+/* Train list styles */
+
+
+
+/* Booking form styles */
+.booking-form-box {
+    width: 400px;
+    border: 1px solid #ced4da;
+    margin: 10px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 2px;
+    color:#2d65de;
+    padding-bottom: 15px;
+}
+
+.booking-form {
+    padding: 20px;
+}
+
+.booking-form label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.booking-form input::placeholder {
+    color:#8e8e8e;
+}
+
+.booking-form .form-control {
+    font-size: 12px;
+    border-radius: 0;
+    color: #8e8e8e;
+}
+
+.bg-img {
+    background-image: url(./images/train.webp);
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 20px;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+
+
+.booking-form input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 12px 0;
+    border: none;
+    background: white;
+    border: #000000 1px solid;
+}
+
+.booking-form .input select {
+    padding: 5px;
+    color: #2d65de;
+    border: none;
+    background: white;
+    border: #000000 1px solid;
+}
+.booking-form img{
+    padding-left: 130px;
+}
+.booking-form input[type=date]{
+    padding: 4px;
+    margin-top: 15px;
+    margin-left: 75px;
+
+}
+
+.booking-form [type=text]:focus, input[type=password]:focus {
+    background-color: #e8e6e6;
+    outline: none;
+    color: black;
+}
+
+.booking-form .sign {
+    
+    width: 100px;
+    padding: 8px;
+    background-color: #2d65de;
+    color: aliceblue;
+    border: none;
+    margin-top: 20px;
+    margin-left: 60px;
+    border: none;
+    border-radius: 4px;
+}
+
+.booking-form .sign:hover {
+    background-color: #ded82d;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Payment page styles */
+
+
+.payment-content {
+    background-color: #ededed;
+    padding: 20px;
+    text-align: center;
+}
+
+.payment-content h1 {
+    color:#2d65de;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.payment-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.payment-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.payment-form .form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.payment-form .btn-primary {
+    background-color:#2d65de;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.payment-form .btn-primary:hover {
+    background-color:green;
+}
+
+
+
+/* Footer styles */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(190, 197, 208);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 13px;
+  }
